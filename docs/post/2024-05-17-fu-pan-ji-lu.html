@@ -9,9 +9,27 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="langchain。">
+<meta name="description" content="#做的好的
+*早起带饭
+
+
+#待改进
+*专注度
+
+
+#开销
+*早餐：2.8元。">
 <meta property="og:title" content="2024-05-17复盘记录">
-<meta property="og:description" content="langchain。">
+<meta property="og:description" content="#做的好的
+*早起带饭
+
+
+#待改进
+*专注度
+
+
+#开销
+*早餐：2.8元。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://uosoul.github.io/uosoul/post/2024-05-17-fu-pan-ji-lu.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
@@ -70,7 +88,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>langchain</p></div>
+<div class="markdown-body" id="postBody"><p>#做的好的<br>
+*早起带饭</p>
+<p>#待改进<br>
+*专注度</p>
+<p>#开销<br>
+*早餐：2.8元</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
@@ -128,7 +151,11 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-
+cmButton=document.getElementById("cmButton");
+    span=document.createElement("span");
+    span.setAttribute("class","Counter");
+    span.innerHTML="1";
+    cmButton.appendChild(span);
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
